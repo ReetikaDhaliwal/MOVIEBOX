@@ -1,6 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-backdrop: #160F13;
+  --color-curtain: #2B141C;
+  --color-velvet: #6B1E2B;
+  --color-marquee: #D4A94A;
+  --color-cream: #F2E9DC;
+  --color-mauve: #9C8390;
+
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
 
 body {
   @apply bg-backdrop text-cream font-body;
@@ -26,4 +37,41 @@ body {
 .focus-ring:focus-visible {
   outline: 2px solid #d4a94a;
   outline-offset: 2px;
+}
+
+.trailer-section {
+  margin-top: 35px;
+}
+
+.trailer-section h3 {
+  margin-bottom: 18px;
+}
+
+.trailer-section iframe {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+}
+
+.cast-section {
+  margin-top: 35px;
+}
+
+.trailer-section {
+  margin-top: 35px;
+}
+
+.trailer-section iframe {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+}
+
+.no-trailer {
+  margin-top: 25px;
+  color: #9c8390;
 }
