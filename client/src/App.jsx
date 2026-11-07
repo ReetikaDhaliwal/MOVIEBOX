@@ -161,7 +161,7 @@ function App() {
       }
 
       setRegisterSuccess(true)
-      setRegisterMessage('Account created successfully! Welcome to MovieBox.')
+      setRegisterMessage('Account created successfully! Welcome to CineVerse.')
 
       setRegisterData({
         name: '',
@@ -260,7 +260,7 @@ function App() {
 
             <h1>Create Your Account</h1>
 
-            <p>Join MovieBox and discover your next favourite movie.</p>
+            <p>Join CineVerse and discover your next favourite movie.</p>
 
             <form onSubmit={handleRegister}>
 
